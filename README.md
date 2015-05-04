@@ -1,10 +1,11 @@
-A solar tracker developed in Visual Studio 2012, using a Mightex CCD USB camera.
+Source code of a solar tracker developed in Visual Studio 2012, using a Mightex CCD USB camera, openCV library and JPL ephemeris.
 
 #Purpose and Tools
 
 The purpose of this piece of software is to provide information to a telescope's motors about which way to aim the telescope.
 Ephemeris file used has the precise coordinates of the sun in the astronomical coordinates.
 If the camera and a telescope is aligned so they're both on the same beam axis, the centroid location of the sun in a captured frame corresponds to the real location of the sun in the space, hence we can adjust the telescope to look at a specific point in the space.
+A mightex USB camera is used alongside a cctv lens. openCV image processing library is used to centroid the sun. SofaJPL library is used to extraxt information from the binary ephemeris file provided by JPL. Developed in Microsoft Visual Studio.
 
 #Libraries and Dependencies:
 
