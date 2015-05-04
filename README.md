@@ -1,8 +1,14 @@
-A solar tracker developed in Visual Studio 2012.
+A solar tracker developed in Visual Studio 2012, using a Mightex CCD USB camera.
+
+#Purpose and Tools
+
+The purpose of this piece of software is to provide information to a telescope's motors about which way to aim the telescope.
+Ephemeris file used has the precise coordinates of the sun in the astronomical coordinates.
+If the camera and a telescope is aligned so they're both on the same beam axis, the centroid location of the sun in a captured frame corresponds to the real location of the sun in the space, hence we can adjust the telescope to look at a specific point in the space.
 
 #Libraries and Dependencies:
 
-  + JPL ephemeris ASCII format - ftp://ssd.jpl.nasa.gov/pub/eph/planets/ascii/
+  + JPL ephemeris ASCII format (using 406 in this version, can use an updated version although not tested.)- ftp://ssd.jpl.nasa.gov/pub/eph/planets/ascii/
 
   + JPL ephemeris ASCII to binary conversion (asc2bin.c)- http://www.cv.nrao.edu/~rfisher/Ephemerides/computer_code.html#asc2bin
 
@@ -17,6 +23,8 @@ A solar tracker developed in Visual Studio 2012.
 Solar_Tracker.cpp:
  
 	+ main function is located in this file.
+	
+	+ Settings are loaded from the Settings.txt
  	
  	+ FrameCallBack is where the frame capture and image processing takes place.
  
