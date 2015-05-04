@@ -1,0 +1,34 @@
+show_images = TRUE
+
+img_process = TRUE
+
+draw = TRUE
+
+
+ThresholdValue = 240 // 0-255
+
+
+ThresholdType = 3
+
+   // docs.opencv.org/doc/tutorials/imgproc/threshold/threshold.html
+   // 0: Binary
+   // 1: Binary Inverted
+   // 2: Threshold Truncated
+   // 3: Threshold to Zero
+   // 4: Threshold to Zero Inverted
+ 
+
+
+
+
+
+ExposureTime = 0.005
+
+
+Latitude = 1.1
+
+
+Longitude = 1.1
+
+
+Altitude = 9.2
